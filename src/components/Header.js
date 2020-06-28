@@ -12,7 +12,8 @@ export default class Header extends Component {
         };
     }
     changeNameClick() {
-        console.log(this.props)
+        console.log(this.props);
+        console.log('test');
         this.setState({
             isName: !this.state.isName
         })

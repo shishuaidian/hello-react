@@ -12,7 +12,7 @@ export default class App extends Component {
     }
     return (
       <div>
-        <Header />
+        <Header name={user.name} />
         <div>
           first react
           My age is {user.age}

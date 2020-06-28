@@ -7,11 +7,6 @@ export default class Home extends Component {
       age: props.Age,
       type: 0
     }
-    setTimeout(() => {
-      this.setState({
-        type: 5
-      })
-    }, 3000)
   }
   numChangeClick() {
     this.setState({

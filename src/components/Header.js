@@ -33,11 +33,15 @@ export default class Header extends Component {
             isColor: !this.state.isColor
         })
     }
+    renderPress() {
+        console.log('触发了')
+    }
 
     render() {
         const { username } = this.state;
         return (
             <div>
+                <div onClick={() => {this.renderPress()}}>触发事件</div>
                 <div className={this.state.isColor ? 'box-color2' : 'box-color'} onClick={() => {this.changeColorClick()}}>{this.state.name}</div>
                 <button onClick={() => {this.changeNameClick()}}>{username}</button>
             </div>
